@@ -22,3 +22,24 @@ f) Otherwise, print "Fuel and engine status pending..." */
 
 /* 6) b) Code the following if/else check:
 If fuelLevel is above 20000 AND engineIndicatorLight is NOT red blinking OR commandOverride is true print "Cleared to launch!" Else print "Launch scrubbed!" */
+
+if (fuelLevel > 20000 && engineTemperature <= 2500){
+console.log("Full Tank. Engines good");
+} else if (fuelLevel > 10000 && engineTemperature <= 2500){
+console.log("Fuel level above 50%. Engines good");
+} else if (fuelLevel > 5000 && engineTemperature <= 2500){
+    console.log("Fuel level at 25%. Engines good");
+} else if (fuelLevel > 1000 || engineTemperature > 3500 || engineIndicatorLight === "red blinking"){
+    console.log("ENGINE FAILURE IMMINENT!")
+} else {
+    console.log("Fuel and engine status pending...");
+}
+
+
+let commandOverride = true;
+
+if (fuelLevel > 20000 && engineIndicatorLight !== "red blinking" || commandOverride){
+    console.log("Cleared to launch!");
+} else {
+    console.log("Launched scrubbed");
+}
