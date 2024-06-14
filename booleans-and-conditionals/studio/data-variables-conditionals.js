@@ -14,6 +14,12 @@ let minimumFuelTemp = -300;
 let maximumFuelTemp = -150;
 let fuelLevel = "100%"
 let weatherStatus = "clear";
+let weather = false;
+let fuel = false;
+let temp = false;
+let mass = false;
+let astroStat = false;
+let astroCount = false;
 let prepareForLiftOff = true;
 
 
@@ -25,12 +31,12 @@ console.log(time);
 if (astronautCount > 7) {
     console.log("Astronaut Count: " + astronautCount + ". Too many fellas on the ship.");
 } else {
-     let astroCount = true;
+     astroCount = true;
     console.log("Astronaut Count: " + astronautCount + ". We have the appropriate amount of astronauts!");
 }
 // add logic below to verify all astronauts are ready
 if (astronautStatus) {
-     let astroStat = true;
+     astroStat = true;
     console.log("Astronaut Status: " + astronautStatus + ". Astronauts are good to go!");
 } else {
     console.log("Astronaut Status: " + astronautStatus + ". Not all astronauts are good to go.");
@@ -40,26 +46,26 @@ if (astronautStatus) {
 if (totalMassKg > 850000) {
     console.log("Total Mass: " + totalMassKg + ". The mass is too darn high.");
 } else {
-    let mass = true;
+    mass = true;
 console.log("Total Mass: " + totalMassKg + ". We have an acceptable mass!");
 }
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 if (fuelTempCelsius > minimumFuelTemp && fuelTempCelsius < maximumFuelTemp) {
-     let temp = true;
+     temp = true;
 console.log("Fuel Temperature: " + fuelTempCelsius +". Just the right temperature!");
 } else {
     console.log("Fuel Temperature: " + fuelTempCelsius + ". Temps are all whack.");
 }
 // add logic below to verify the fuel level is at 100%
 if (fuelLevel === "100%") {
-     let fuel = true;
+     fuel = true;
     console.log("Fuel Level: " + fuelLevel + ". We have enough juice!")
 } else {
     console.log("Fuel Level: " + fuelLevel + ". Not enough juice.");
 }
 // add logic below to verify the weather status is clear
 if (weatherStatus === "clear") {
-     let weather = true;
+     weather = true;
     console.log("Weather Status: " + weatherStatus +". Weather is acceptable for launch!");
 } else {
     console.log("Weather Status: " + weatherStatus +". Weather conditions are not suitable for take-off.");
