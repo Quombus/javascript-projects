@@ -52,14 +52,14 @@ let array = [1, 5, 'LC101', 'blue', 42];
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
-  let arrayDefault = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104]
+  let arrayDefault1 = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104]
   let arrayEven = [];
   let arrayOdd = [];
-  for (let i = 0; i <= arrayDefault.length; i++){
-  if (arrayDefault[i] % 2 === 0){
-    arrayEven = arrayEven.concat(arrayDefault[i]);
-  } else if (arrayDefault[i] % 2 === 1){
-    arrayOdd = arrayOdd.concat(arrayDefault[i]);
+  for (let i = 0; i <= arrayDefault1.length; i++){
+  if (arrayDefault1[i] % 2 === 0){
+    arrayEven = arrayEven.concat(arrayDefault1[i]);
+  } else if (arrayDefault1[i] % 2 === 1){
+    arrayOdd = arrayOdd.concat(arrayDefault1[i]);
   }
   
   }
