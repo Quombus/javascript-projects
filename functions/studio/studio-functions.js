@@ -83,6 +83,49 @@ console.log(reverseArray(arrayTest3));
 
 
 
+function funPhrase(string) { 
+
+if (string.length <= 3){
+    let snippet = string[string.length-1];
+    console.log(snippet);
+    console.log(`We put the '${snippet}' in '${string}'.`);
+} else {
+    let snippet = string.slice(0 , 3);
+    console.log(snippet);
+    console.log(`We put the '${snippet}' in '${string}'.`);
+}
+}
+
+funPhrase('goo');
+
+
+function areaOfTriangle(height, base){
+
+    let area = (height * base) / 2;
+    return area;
+}
+   
+console.log(areaOfTriangle(30,10));
+
+function areaOfRectangle(length, height){
+  let area;
+
+  if (height == null){
+    console.log('square');
+ area = length * length;
+  } else {
+    area = length * height;
+  }
+
+  return area;
+
+}
+    
+   console.log(`the area is ${areaOfRectangle(4, 6)} cm^2`);
+   
+
+
+
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
