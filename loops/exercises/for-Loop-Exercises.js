@@ -34,16 +34,16 @@ Construct ``for`` loops to accomplish the following tasks:
 let string = 'LaunchCode';
 let array = [1, 5, 'LC101', 'blue', 42];
 
-// for (let i = 0; i < array.length; i++){
-//   console.log(array[i]);
-// }
+for (let i = 0; i < array.length; i++){
+  console.log(array[i]);
+}
 
-// for (let i = string.length - 1; i >= 0; i--) { 
+for (let i = string.length - 1; i >= 0; i--) { 
   
-//   console.log(string[i]);
+  console.log(string[i]);
 
 
-// }
+}
 
 
 

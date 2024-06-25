@@ -8,6 +8,47 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+let str = 'Matthew';
+let num = 1234;
+
+function reverseCharacters(){
+    let lettersArray = str.split('');
+    let reverseCharacters = lettersArray.reverse();
+    return reverseCharacters.join('');
+}
+
+console.log(reverseCharacters(str));
+
+
+function reverseCharacters(num){
+    let numString = String(num);
+    let numArray = numString.split('');
+    let reverseCharacters = numArray.reverse();
+    return reverseCharacters.join('');
+}
+
+console.log(reverseCharacters(num));
+
+
+function reverseCharacters(piece){
+if ( ( typeof piece === typeof 1)){
+    let numString = String(piece);
+    let numArray = numString.split('');
+    let reverseCharacters = numArray.reverse();
+    return reverseCharacters.join('');
+} else if (typeof piece === typeof 'String') {
+    let lettersArray = str.split('');
+    let reverseCharacters = lettersArray.reverse();
+    return reverseCharacters.join('');
+}
+}
+
+
+console.log(reverseCharacters(str));
+
+
+
+
 
 // Part Two: Reverse Digits
 
@@ -16,7 +57,7 @@
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
-
+ 
 // Part Three: Complete Reversal - Create a new function with one parameter, which is the array we want to change. The function should:
 
 // 1. Define and initialize an empty array.
@@ -29,6 +70,18 @@
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+let newArray =  [];
+
+function reverseArray(array){ 
+for (let i = 0; i < array.length; i++){
+  newArray = array.toString().split('').reverse();
+  newArray = newArray.join('');
+  return newArray.split(',');
+}
+}
+console.log(reverseArray(arrayTest3));  
+
+
 
 // Bonus Missions
 
