@@ -1,76 +1,101 @@
-let size = 5;
-function makeLine(n) {
+// let size = 5;
+// function makeLine(n) {
 
-let hash = '#';
-let hashLine = hash.repeat(n);
-return hashLine; 
+// let hash = '#';
+// let hashLine = hash.repeat(n);
+// return hashLine; 
 
-}
-console.log(makeLine(1));
-
-
-
-
-function makeRectangle(x, y){
-      let line =  (` ${makeLine(x)}\n`)
-      let rectangle = line.repeat(y);
-      return rectangle;
-}
+// }
+// console.log(makeLine(1));
 
 
 
- function makeStairs(s){ 
-   let stepLadder;
-    for (let i = 0; i < s ; i++){    
-    let hash = '#';
-    stepLadder = `${hash.repeat(i + 1)}`
-    console.log(stepLadder)
-    }
-    return stepLadder;
- }
-makeStairs(5);
+
+// function makeRectangle(x, y){
+//       let line =  (` ${makeLine(x)}\n`)
+//       let rectangle = line.repeat(y);
+//       return rectangle;
+// }
 
 
-function makeSpaceLine(numSpace, numChars){
-let spaces = '_'
-let chars = "#"
 
-spacesTotal = spaces.repeat(numSpace);
-charsTotal = chars.repeat(numChars);
-let output = console.log(`${spacesTotal}${charsTotal}${spacesTotal}`);
+//  function makeStairs(s){ 
+//    let stepLadder;
+//     for (let i = 0; i < s ; i++){    
+//     let hash = '#';
+//     stepLadder = `${hash.repeat(i + 1)}`
+//     console.log(stepLadder)
+//     }
+//     return stepLadder;
+//  }
+// makeStairs(5);
 
-return output;
- }
-makeSpaceLine(3,5);
+
+// function makeSpaceLine(numSpace, numChars){
+// let spaces = '_'
+// let chars = "#"
+
+// spacesTotal = spaces.repeat(numSpace);
+// charsTotal = chars.repeat(numChars);
+// let output = console.log(`${spacesTotal}${charsTotal}${spacesTotal}`);
+
+// return output;
+//  }
+// makeSpaceLine(3,5);
 
 
-function makeIsocelesTriangle(height){
-    let triangle;
-    for (let i = 0; i < height ; i++){    
-        let hash = '#';
-        let space = " "
+// function makeIsocelesTriangle(height){
+//     let triangle;
+//     for (let i = 0; i < height ; i++){    
+//         let hash = '#';
+//         let space = " "
         
 
-        let triangle = `${space.repeat(height - i - 1)} ${hash.repeat(2 * i + 1)}`
-        console.log(triangle);
-}
-return triangle;
-}
-makeIsocelesTriangle(5);
+//         let triangle = `${space.repeat(height - i - 1)} ${hash.repeat(2 * i + 1)}`
+//         console.log(triangle);
+// }
+// return triangle;
+// }
+// makeIsocelesTriangle(5);
 
-function makeDiamond(height){
+// function makeDiamond(height){
 
- for (let i = 0; i < height ; i++){    
-    let hash = '#';
-    let space = " "
-    console.log(space.repeat(height - i - 1) + hash.repeat(2 * i + 1));
-}
-for (let i = height - 1; i >= 0; i--){    
-        let hash = '#';
-        let space = " "
-        console.log(space.repeat(height - i - 1) + hash.repeat(2 * i + 1));     
-}
+//  for (let i = 0; i < height ; i++){    
+//     let hash = '#';
+//     let space = " "
+//     console.log(space.repeat(height - i - 1) + hash.repeat(2 * i + 1));
+// }
+// for (let i = height - 1; i >= 0; i--){    
+//         let hash = '#';
+//         let space = " "
+//         console.log(space.repeat(height - i - 1) + hash.repeat(2 * i + 1));     
+// }
 
 
+// }
+// makeDiamond(5);
+
+let arr = ['Elocution', 21, 'Clean teeth', 100];
+let arrayNumbers = [2, 1 , 4, 5];
+
+function arrayMapTest(array){
+    let doubleFunction = function(n) {
+      return n*2;
+    };
+    let returnedArray = array.map(doubleFunction);
+    console.log(returnedArray);
+
 }
-makeDiamond(5);
+
+arrayMapTest(arr);
+
+let arrayStrings = ['Grongulo', 'Jarqueezius', 'Clyde;']
+
+function wordSwapFunction(wordArray){
+    let wordSwap = function(n){
+     return n = "SWAP";
+    };
+    let returnedArray = wordArray.map(wordSwap);
+    console.log(returnedArray);
+}
+wordSwapFunction(arr);
