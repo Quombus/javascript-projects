@@ -15,14 +15,6 @@ c) Print the new array to confirm your work.
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
 function itemAlteration(param){
-   return typeof param == typeof 1 ? param = param * 3: param = "AAAAAAH!";
-}
+   return typeof param == typeof 1 ? param * 3: param = "ARRR!"; //Ternary operator, BAAAAABYYYYYYYYYYYYYYYYYYYYYY!!!!!!
+} 
 console.log(arr.map(e => itemAlteration(e)));
-
-
-
-
-
-
-
-

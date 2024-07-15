@@ -55,4 +55,24 @@ let candidateA = {
  };
  
  let crew = [candidateA,candidateC,candidateE];
- 
+
+ let altitudeInKm = 2000;
+ let speedinKmPerHour = 28000;  
+
+ function circumference(radius){ 
+  return Math.round(2 * Math.PI * radius);
+ }
+
+
+function missionDuration(numOrbits, circumference, speed){
+     return numOrbits * (circumference/speed);
+}
+
+console.log(`The mission will travel ${speedinKmPerHour}km around the planet, and it will take ${missionDuration(5, circumference(altitudeInKm), speedinKmPerHour)} to complete. `);
+
+
+
+
+
+
+

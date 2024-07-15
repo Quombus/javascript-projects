@@ -11,44 +11,38 @@
 let str = 'Matthew';
 let num = 1234;
 
-function reverseCharacters(){
+function reverseCharacters(str){
     let lettersArray = str.split('');
-    let reverseCharacters = lettersArray.reverse();
-    return reverseCharacters.join('');
+    lettersArray.reverse();
+    return lettersArray.join('');
+
+  
 }
 
 console.log(reverseCharacters(str));
 
 
 function reverseCharacters(num){
-    let numString = String(num);
-    let numArray = numString.split('');
-    let reverseCharacters = numArray.reverse();
-    return reverseCharacters.join('');
+let alteredNumber = String(num);
+alteredNumber.split('').reverse().join();
+    return Number(alteredNumber);
 }
 
 console.log(reverseCharacters(num));
 
-
 function reverseCharacters(piece){
-if ( ( typeof piece === typeof 1)){
+if ( ( typeof piece == typeof 1)){
     let numString = String(piece);
     let numArray = numString.split('');
     let reverseCharacters = numArray.reverse();
     return reverseCharacters.join('');
-} else if (typeof piece === typeof 'String') {
+} else if (typeof piece == typeof 'String') {
     let lettersArray = str.split('');
     let reverseCharacters = lettersArray.reverse();
     return reverseCharacters.join('');
 }
 }
-
-
 console.log(reverseCharacters(str));
-
-
-
-
 
 // Part Two: Reverse Digits
 
@@ -81,30 +75,25 @@ for (let i = 0; i < array.length; i++){
 }
 console.log(reverseArray(arrayTest3));  
 
-
-
 function funPhrase(string) { 
 
 if (string.length <= 3){
     let snippet = string[string.length-1];
-    console.log(snippet);
     console.log(`We put the '${snippet}' in '${string}'.`);
 } else {
     let snippet = string.slice(0 , 3);
-    console.log(snippet);
     console.log(`We put the '${snippet}' in '${string}'.`);
 }
 }
 
 funPhrase('goo');
 
-
 function areaOfTriangle(height, base){
 
     let area = (height * base) / 2;
     return area;
 }
-   
+
 console.log(areaOfTriangle(30,10));
 
 function areaOfRectangle(length, height){
@@ -116,11 +105,9 @@ function areaOfRectangle(length, height){
   } else {
     area = length * height;
   }
-
   return area;
-
 }
-    
+
    console.log(`the area is ${areaOfRectangle(4, 6)} cm^2`);
    
 
